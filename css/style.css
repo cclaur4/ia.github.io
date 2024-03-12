@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+.fondo-header {
+    background-image: linear-gradient(135deg, rgba(0, 0, 1, 0.615)0%, rgba(61, 58, 58, 0.508)100%), url(https://forbes.es/wp-content/uploads/2023/07/robor-ordenador-inteligencia-artificial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 15cm;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: rgba(22, 22, 22, 0.824);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    font-family: "Kode Mono", monospace;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2;
+    margin: 0 5px;
+    font-family: "Kode Mono", monospace;
+    font-size: 23px;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: white;
+}
+
+.info-cards {
+    background: rgba(112, 112, 112, 0.804);
+    width: 60%;
+    display: flex;
+    margin-top: 3.5%;
+    border-radius: 0 12px 12px 0;
+    background: rgba(22, 22, 22, 0.824);
+}
+
+.info-cards .cards {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.info-cards .cards img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 8px 12px -8px rgb(89, 89, 89);
+}
+
+.info-cards .cards h2 {
+    font-family: "Kode Mono", monospace;
+    font-size: 20px;
+}
+
+.info-cards .cards p {
+    text-align: justify;
+    word-spacing: -2.5px;
+    font-family: "Single Day", cursive;
+    font-size: 16px;
+}
+
+/*bodycontent*/
+.body-content {
+    margin-top: 3%;
+}
+
+.body-content h1 {
+    color: white;
+    font-family: "Kode Mono", monospace;
+    margin-left: 5%;
+}
+
+.body-content p {
+    margin-left: 6%;
+    font-family: "Single Day", cursive;
+    color: white;
+    width: 90%;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.body-content .info-content-empleados {
+    margin-top: 3%;
+    color: white;
+}
+
+.body-content .info-content-empleados .linea {
+    width: 30%;
+    height: 5px;
+    background: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.body-content .info-content-empleados h2 {
+    font-family: "Kode Mono", monospace;
+    padding-top: 15px;
+    margin-left: 5%;
+}
+
+.body-content .info-content-empleados ul li {
+    font-family: "Single Day", cursive;
+    padding-top: 15px;
+    margin-left: 6%;
+    width: 85%;
+    list-style: disc;
+    font-size: 20px;
+}
+
+.body-content .info-p-img {
+    overflow: auto;
+    margin-top: 3%;
+}
+
+.body-content .info-p-img p {
+    float: left;
+    width: 40%;
+}
+
+
+.body-content .info-p-img .img {
+    float: right;
+    width: 50%;
+}
+
+.body-content .info-p-img .img img {
+    width: 40%;
+    border-radius: 150px 0px 150px 0px;
+    box-shadow: 0px 8px 20px -8px rgb(109, 216, 255);
+}
+
+
+.body-content .clase-contenido {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5%;
+}
+
+
+.body-content .contenido {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+
+.body-content .card {
+    flex: 0 0 auto;
+    width: 300px;
+    background-color: #c4c4c450;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.body-content .card h2,h3{
+    font-family: "Kode Mono", monospace;
+    color: white;
+}
+
+.body-content .card img{
+    width: 100%;
+}
+
+.body-content .card button{
+    text-align: center;
+    color:white;
+    background: rgb(43, 43, 68);
+    font-size: 22px;
+    font-family: "Kode Mono", monospace;
+    padding: 10px 10px;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.body-content .flecha-izquierda,
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(81, 81, 81, 0.5);
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.body-content .flecha-izquierda {
+    left: 0;
+}
+
+.body-content .flecha-derecha {
+    right: 0;
+}
+
+footer{
+    display: flex;
+    gap: 25px;
+    color: white;
+    justify-content: center;
+    padding: 20px 20px;
+    margin-top: 5%;
+}
+
+footer h1{
+    font-family: "Kode Mono", monospace;
+    font-size: 30px;
+}
+
+footer p{
+    font-family: "Single Day", cursive;
+    font-size: 26px;
+}
+
+footer .redes{
+    display: flex;
+    gap: 15px;
+}
+
+footer .redes a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .redes a i{
+    font-size: 28px;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 20px;
+}
+
+.copy p{    
+    font-family: "Kode Mono", monospace;
+}
+
+/*navbarcontent*/
+
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(22, 22, 22, 0.824);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 400px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+
+    .fondo-header{
+        height: 40cm;
+    }
+
+    .info-cards{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding: 15px 15px;
+    }
+
+    .info-cards .cards p{
+        font-size: 20px;
+    }
+
+    .body-content .info-p-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-content .info-p-img p{
+        width: 90%;
+    }
+
+    .body-content .info-p-img .img{
+        width: 100%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .body-content .info-p-img .img img{
+        width: 90%;
+    }
+
+    footer,.redes{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
